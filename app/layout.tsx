@@ -14,7 +14,7 @@ export const metadata = {
     default: 'Next.js AI Chatbot',
     template: `%s - Next.js AI Chatbot`
   },
-  manifest: "/manifest.json",
+
   description: 'An AI-powered chatbot template built with Next.js and Vercel.',
   icons: {
     icon: '/favicon.ico',
