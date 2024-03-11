@@ -14,6 +14,7 @@ export const metadata = {
     default: 'Next.js AI Chatbot',
     template: `%s - Next.js AI Chatbot`
   },
+  manifest: "/manifest.json",
   description: 'An AI-powered chatbot template built with Next.js and Vercel.',
   icons: {
     icon: '/favicon.ico',
@@ -36,6 +37,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
+    <link rel="manifest" crossOrigin="use-credentials" href="/manifest.json" />
       <body
         className={cn(
           'font-sans antialiased',
